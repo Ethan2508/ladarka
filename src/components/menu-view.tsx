@@ -221,7 +221,7 @@ function ProductGrid({
                   </span>
                 )}
               </div>
-              <div className="p-5">
+              <div className="p-5 pb-14">
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="font-display text-xl leading-tight">
                     {p.name}
@@ -231,7 +231,7 @@ function ProductGrid({
                   </span>
                 </div>
                 {p.description && (
-                  <p className="mt-2 text-sm text-muted line-clamp-2 pr-14">
+                  <p className="mt-2 text-sm text-muted line-clamp-2">
                     {p.description}
                   </p>
                 )}
