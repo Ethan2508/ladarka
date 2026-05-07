@@ -230,11 +230,9 @@ function ProductGrid({
                     {formatPrice(p.price)}
                   </span>
                 </div>
-                {p.description && (
-                  <p className="mt-2 text-sm text-muted line-clamp-2">
-                    {p.description}
-                  </p>
-                )}
+                <p className="mt-2 text-sm text-muted line-clamp-2 min-h-[2.5rem]">
+                  {p.description ?? "\u00A0"}
+                </p>
               </div>
             </Link>
             <button
