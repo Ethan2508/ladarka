@@ -16,11 +16,10 @@ export function Footer() {
           <div className="md:col-span-5">
             <Link href="/" className="inline-block">
               <Image
-                src="/brand/logo.gif"
+                src="/brand/logo-blanc.png"
                 alt="La Darka"
-                width="240"
-                height="240"
-                unoptimized
+                width="400"
+                height="400"
                 className="h-24 md:h-32 w-auto"
               />
             </Link>

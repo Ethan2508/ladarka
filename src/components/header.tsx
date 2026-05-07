@@ -48,11 +48,10 @@ export function Header() {
         <div className="max-w-[1400px] mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between gap-6">
           <Link href="/" className="flex items-center gap-3 group">
             <Image
-              src="/brand/logo.gif"
+              src="/brand/logo-blanc.png"
               alt="La Darka"
-              width="96"
-              height="96"
-              unoptimized
+              width="200"
+              height="200"
               priority
               className="h-10 md:h-12 w-auto"
             />
