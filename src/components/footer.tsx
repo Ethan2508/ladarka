@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Instagram, MapPin, Phone, Clock } from "lucide-react";
 import { usePathname } from "next/navigation";
 
@@ -13,8 +14,15 @@ export function Footer() {
       <div className="max-w-[1400px] mx-auto px-5 md:px-8 py-16 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-5">
-            <Link href="/" className="font-display text-5xl md:text-7xl block">
-              La<span className="text-[color:var(--accent)]">Darka</span>.
+            <Link href="/" className="inline-block">
+              <Image
+                src="/brand/logo.gif"
+                alt="La Darka"
+                width="240"
+                height="240"
+                unoptimized
+                className="h-24 md:h-32 w-auto"
+              />
             </Link>
             <p className="mt-6 text-muted max-w-md">
               Le goût de la rue, version premium. Smash burgers, ailes BBQ et

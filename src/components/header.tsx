@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ShoppingBag, Menu as MenuIcon, X, User } from "lucide-react";
@@ -45,13 +46,16 @@ export function Header() {
         )}
       >
         <div className="max-w-[1400px] mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between gap-6">
-          <Link href="/" className="flex items-center gap-2 group">
-            <span className="font-display text-2xl md:text-3xl text-text">
-              La<span className="text-[color:var(--accent)]">Darka</span>
-            </span>
-            <span className="hidden md:inline text-[10px] uppercase tracking-[0.2em] text-muted">
-              Burgers · Lyon
-            </span>
+          <Link href="/" className="flex items-center gap-3 group">
+            <Image
+              src="/brand/logo.gif"
+              alt="La Darka"
+              width="96"
+              height="96"
+              unoptimized
+              priority
+              className="h-10 md:h-12 w-auto"
+            />
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">

@@ -17,7 +17,7 @@ export default async function OG() {
           justifyContent: "space-between",
           padding: 80,
           background:
-            "radial-gradient(circle at 20% 10%, #ff4d2e22 0%, transparent 50%), radial-gradient(circle at 90% 90%, #f5c51822 0%, transparent 50%), #0a0908",
+            "radial-gradient(circle at 20% 10%, #e2842622 0%, transparent 50%), radial-gradient(circle at 90% 90%, #f5c51822 0%, transparent 50%), #0a0908",
           color: "#fafaf9",
           fontFamily: "sans-serif",
         }}
@@ -28,8 +28,8 @@ export default async function OG() {
               width: 18,
               height: 18,
               borderRadius: 999,
-              background: "#ff4d2e",
-              boxShadow: "0 0 24px #ff4d2e",
+              background: "#e28426",
+              boxShadow: "0 0 24px #e28426",
             }}
           />
           <div
@@ -61,7 +61,7 @@ export default async function OG() {
               fontWeight: 800,
               lineHeight: 0.95,
               letterSpacing: -4,
-              color: "#ff4d2e",
+              color: "#e28426",
             }}
           >
             Sauce.
