@@ -88,8 +88,16 @@ export function Footer() {
             © {new Date().getFullYear()} La Darka — Tous droits réservés.
           </p>
           <p className="text-xs text-muted">
-            Site refait avec amour par{" "}
-            <span className="text-text">Ethan</span>.
+            Site refait par{" "}
+            <a
+              href="https://stapes.fr"
+              target="_blank"
+              rel="noreferrer"
+              className="text-text hover:text-[color:var(--accent)] transition-colors"
+            >
+              stapes.fr
+            </a>
+            .
           </p>
         </div>
       </div>
