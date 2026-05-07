@@ -81,8 +81,8 @@ export function MenuView() {
 
       {/* Filters bar */}
       <div className="sticky top-16 md:top-20 z-30 bg-[color:var(--bg)]/85 backdrop-blur-xl border-y border-[color:var(--border)]">
-        <div className="max-w-[1400px] mx-auto px-5 md:px-8 py-3 flex items-center gap-3">
-          <div className="relative flex-1 max-w-sm">
+        <div className="max-w-[1400px] mx-auto px-5 md:px-8 py-3 flex flex-col gap-3">
+          <div className="relative w-full">
             <Search
               size={16}
               className="absolute left-4 top-1/2 -translate-y-1/2 text-muted"
@@ -94,7 +94,7 @@ export function MenuView() {
               className="w-full pl-11 pr-4 py-2.5 rounded-full bg-[color:var(--surface)] border border-[color:var(--border)] focus:border-[color:var(--accent)] outline-none text-sm placeholder:text-muted"
             />
           </div>
-          <div className="flex-1 overflow-x-auto no-scrollbar">
+          <div className="-mx-5 md:-mx-8 px-5 md:px-8 overflow-x-auto no-scrollbar">
             <div className="flex gap-2 min-w-max">
               <CatPill active={cat === "all"} onClick={() => setCat("all")}>
                 Tout
@@ -231,7 +231,7 @@ function ProductGrid({
                   </span>
                 </div>
                 {p.description && (
-                  <p className="mt-2 text-sm text-muted line-clamp-2">
+                  <p className="mt-2 text-sm text-muted line-clamp-2 pr-14">
                     {p.description}
                   </p>
                 )}
